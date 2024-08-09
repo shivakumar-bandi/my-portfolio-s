@@ -5,6 +5,7 @@
 #home {
   padding-top: 20px; /* Default padding for larger screens */
   padding-left: 100px;
+  position: relative; /* Ensure proper stacking context */
 }
 
 /* Header styles */
@@ -52,20 +53,25 @@ button:focus {
 /* Responsive Design for Mobile Screens */
 @media (max-width: 768px) {
   #home {
-    padding-top: 150px; /* Increased padding only for small screens */
+    padding-top: 120px; /* Increased padding for mobile screens */
     padding-left: 20px;
+    position: relative; /* Ensure the section is positioned correctly */
   }
 
   .home-section h2 {
     font-size: 20px;
     line-height: 1.2;
     margin: 0;
+    z-index: 1; /* Ensure h2 is on top */
+    position: relative;
   }
 
   .home-section h1 {
     font-size: 36px;
     line-height: 1.2;
     margin: 10px 0;
+    z-index: 1; /* Ensure h1 is on top */
+    position: relative;
   }
 
   .home-section h3 {
