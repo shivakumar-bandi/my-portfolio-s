@@ -3,8 +3,8 @@
 }
 
 #home {
-  padding-top: 40px;
-  padding-left: 100px;
+  padding-top: 100px; /* Increased padding to push content down */
+  padding-left: 20px;
 }
 
 /* Header styles */
@@ -52,7 +52,7 @@ button:focus {
 /* Responsive Design for Mobile Screens */
 @media (max-width: 768px) {
   #home {
-    padding-top: 100px; /* Increased padding to avoid overlapping with navbar */
+    padding-top: 120px; /* Further increased padding to avoid overlapping with navbar */
     padding-left: 20px;
   }
 
