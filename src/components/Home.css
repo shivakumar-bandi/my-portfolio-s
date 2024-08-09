@@ -59,7 +59,7 @@ button:focus {
 /* Responsive Design for Mobile Screens */
 @media (max-width: 768px) {
   #home {
-    padding-top: 150px; /* Further increased padding */
+    padding-top: 170px; /* Further increased padding */
     padding-left: 20px;
   }
 
