@@ -1,0 +1,35 @@
+.home{
+  padding-top: 20px;
+}
+#home{
+  padding-top: 40px;
+  padding-left: 100px;
+}
+
+.home-section h1{
+font-size: 50px;
+line-height: 1.2;
+color: rgb(0, 38, 255);
+}
+.home-section h3{
+  color: purple;
+}
+button {
+  background-color: transparent;
+  border: 2px solid #66d9ef; /* Light cyan color similar to the text */
+  border-radius: 5px;
+  color: #66d9ef; /* Light cyan color */
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: #66d9ef; /* Fill the background on hover */
+  color: #000; /* Change text color on hover */
+}
+
+button:focus {
+  outline: none;
+}

@@ -1,0 +1,34 @@
+.skill-card {
+    background-color: #1a1a1a; /* Dark background */
+    border: 2px solid #00cec9; /* Border color */
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .skill-icon {
+    font-size: 50px; /* Adjust the size as needed */
+    color: #00cec9;  /* Match your color theme */
+    margin-bottom: 8px;
+  }
+  
+  .skill-name {
+    font-size: 16px;
+    color: #00cec9;
+  }
+  
+  .skills-section, .tools-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  

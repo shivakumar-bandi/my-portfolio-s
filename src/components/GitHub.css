@@ -1,0 +1,130 @@
+.github-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 800px; /* Adjust the width */
+    margin: auto;
+}
+
+.contribution-graph {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contribution-graph h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #0366d6;
+}
+
+.contribution-graph img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    background-color: transparent; /* Remove background color */
+    border: 2px solid #cdd9e5; /* Add border */
+    padding: 20px;
+    border-radius: 10px;
+    color: #cdd9e5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Make each card full width */
+    max-width: 800px;
+}
+
+.card h2, .card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #39d353;
+}
+
+.stats-info, .streak-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.stat-item {
+    width: 45%;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.progress-circle {
+    width: 45%;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #39d353;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.circle-inner {
+    font-size: 20px;
+    color: #000;
+}
+
+.contributions-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contributions-info h3 {
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+.streak-item {
+    width: 48%;
+    text-align: center;
+}
+
+.languages-section h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.language-bar {
+    display: flex;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.html-bar {
+    background-color: #e34c26;
+}
+
+.css-bar {
+    background-color: #563d7c;
+}
+
+.js-bar {
+    background-color: #f1e05a;
+}
+
+.react-bar {
+    background-color: #61dafb;
+}
+
+.mern-bar {
+    background-color: #00d1b2;
+}
+
+.language-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}

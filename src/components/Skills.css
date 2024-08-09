@@ -1,0 +1,79 @@
+.skills-tools-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section-title {
+  color: #970884;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.skills-grid, .tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 16px;
+  justify-items: center;
+}
+
+.skill-card {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 10px;
+  transition: transform 0.3s ease-in-out, background-color 0.3s;
+  border: 2px solid transparent;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  border-color: #00cec9;
+}
+
+.skill-icon {
+  font-size: 50px;
+  margin-bottom: 8px;
+}
+
+.skill-name {
+  font-size: 16px;
+}
+
+.skills-section, .tools-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill-card:nth-child(odd) .skill-icon {
+  color: #ff6b6b; /* Redish Color */
+}
+
+.skill-card:nth-child(even) .skill-icon {
+  color: #6c5ce7; /* Purple Color */
+}
+
+.skill-card:nth-child(3n+1) .skill-icon {
+  color: #00cec9; /* Teal Color */
+}
+
+.skill-card:nth-child(3n+2) .skill-icon {
+  color: #fdcb6e; /* Yellow Color */
+}
+
+.skill-card:nth-child(3n+3) .skill-icon {
+  color: #74b9ff; /* Light Blue Color */
+}
+
+.skill-card:hover {
+  background-color: #333; /* Slightly lighter background on hover */
+}

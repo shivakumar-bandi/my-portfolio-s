@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+ 
+    color: rgba(34, 34, 34, 1); /* almost black */
+    margin: 0;
+    padding: 0;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.contact-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: rgba(33, 150, 243, 1); /* blue */
+}
+
+.contact-info {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: rgba(102, 102, 102, 1); /* medium grey */
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-detail {
+    margin-left: 10px;
+    font-weight: bold;
+    color: rgba(255, 87, 34, 1); /* vivid orange */
+}
+
+.copy-button {
+    margin-left: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: rgba(0, 188, 212, 1); /* cyan */
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.copy-button:hover {
+    transform: scale(1.2);
+    color: rgba(0, 155, 188, 1); /* darker cyan */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    background-color: rgba(255, 255, 255, 1); /* white */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* black with 20% opacity */
+}
+
+.contact-form label {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: rgba(33, 150, 243, 1); /* blue */
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 20px;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid rgba(189, 189, 189, 1); /* light grey */
+    background-color: rgba(255, 255, 255, 1); /* white */
+    color: rgba(34, 34, 34, 1); /* almost black */
+    font-size: 1rem;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: rgba(102, 102, 102, 1); /* medium grey */
+}
+
+.contact-form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.contact-form button {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid rgba(33, 150, 243, 1); /* blue */
+    background-color: rgba(33, 150, 243, 1); /* blue */
+    color: rgba(255, 255, 255, 1); /* white */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.contact-form button:hover {
+    background-color: rgba(21, 101, 192, 1); /* dark blue */
+}
+
+.social-links {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-links button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    color: rgba(0, 188, 212, 1); /* cyan */
+    font-size: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.social-links button:hover {
+    transform: scale(1.2);
+    color: rgba(0, 155, 188, 1); /* darker cyan */
+}
+
+.social-links button:focus {
+    outline: none;
+}
