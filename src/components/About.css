@@ -1,45 +1,74 @@
 .about-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    
-    color: #7fc8a9; /* Text color */
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  color: #7fc8a9; /* Text color */
+  flex-direction: column; /* Ensures column layout on smaller screens */
+}
+
+.about-content {
+  display: flex;
+  max-width: 1000px;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap; /* Wrap content to avoid overflow */
+}
+
+.about-text {
+  flex: 1;
+  margin-right: 2rem;
+}
+
+.about-image {
+  flex: 1;
+  margin-left: 0; /* Reset left margin on smaller screens */
+  margin-top: 30px;
+  text-align: center; /* Center image */
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 250px; /* Adjust based on desired size */
+  border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: purple; /* Matching the text color */
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: blueviolet;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .about-content {
-    display: flex;
-    max-width: 1000px;
-    flex-direction: row;
-    align-items: center;
+      flex-direction: column; /* Stack content vertically */
+      text-align: center;
   }
-  
+
   .about-text {
-    flex: 1;
-    margin-right: 2rem;
+      margin-right: 0; /* Reset right margin on smaller screens */
   }
-  
+
   .about-image {
-    flex: 1;
-    margin-left: 14rem;
-    margin-top: 30px;
+      margin-left: 0; /* Reset left margin */
+      margin-top: 20px; /* Adjust spacing */
   }
-  
-  .about-image img {
-    width: 100%;
-    max-width: 250px; /* Adjust based on desired size */
-    border-radius: 10px; /* Optional: Adds rounded corners */
-  }
-  
-  h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: purple; /* Matching the text color */
-  }
-  
+}
+
+@media (max-width: 480px) {
   p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: blueviolet;
+      font-size: 1rem; /* Reduce font size on smaller screens */
+      line-height: 1.4;
   }
-  
+
+  h2 {
+      font-size: 1.5rem; /* Reduce heading size on smaller screens */
+  }
+}

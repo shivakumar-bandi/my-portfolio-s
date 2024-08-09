@@ -128,3 +128,39 @@
     justify-content: space-between;
     font-size: 12px;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .github-container {
+        width: 100%; /* Make the container full width on smaller screens */
+        padding: 0 10px; /* Add padding */
+    }
+
+    .card {
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+
+    .stat-item, .progress-circle, .streak-item {
+        width: 100%; /* Make each item full width on smaller screens */
+        text-align: center;
+    }
+
+    .circle {
+        width: 40px;
+        height: 40px; /* Adjust size */
+    }
+
+    .circle-inner {
+        font-size: 16px; /* Adjust font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .card h2, .card h3 {
+        font-size: 18px; /* Reduce font size on smaller screens */
+    }
+
+    .contributions-info h3 {
+        font-size: 20px; /* Adjust font size */
+    }
+}
