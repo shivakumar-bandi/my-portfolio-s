@@ -1,13 +1,10 @@
 .home {
   padding-top: 20px;
-  position: relative;
 }
 
 #home {
-  padding-top: 120px; /* Ensure enough space from the top */
-  padding-left: 20px;
-  z-index: 1; /* Bring the section forward */
-  position: relative;
+  padding-top: 20px; /* Default padding for larger screens */
+  padding-left: 100px;
 }
 
 /* Header styles */
@@ -16,8 +13,6 @@
   line-height: 1.2;
   color: rgb(0, 38, 255);
   margin: 0;
-  z-index: 2; /* Ensure h2 is above other elements */
-  position: relative;
 }
 
 .home-section h1 {
@@ -25,8 +20,6 @@
   line-height: 1.2;
   color: rgb(0, 38, 255);
   margin: 10px 0;
-  z-index: 2; /* Ensure h1 is above other elements */
-  position: relative;
 }
 
 .home-section h3 {
@@ -59,7 +52,7 @@ button:focus {
 /* Responsive Design for Mobile Screens */
 @media (max-width: 768px) {
   #home {
-    padding-top: 170px; /* Further increased padding */
+    padding-top: 150px; /* Increased padding only for small screens */
     padding-left: 20px;
   }
 
@@ -67,16 +60,12 @@ button:focus {
     font-size: 20px;
     line-height: 1.2;
     margin: 0;
-    z-index: 2; /* Ensure h2 is above other elements */
-    position: relative;
   }
 
   .home-section h1 {
     font-size: 36px;
     line-height: 1.2;
     margin: 10px 0;
-    z-index: 2; /* Ensure h1 is above other elements */
-    position: relative;
   }
 
   .home-section h3 {
