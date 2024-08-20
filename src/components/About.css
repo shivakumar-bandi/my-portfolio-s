@@ -1,58 +1,74 @@
-/* Existing styles... */
-
-.overview-section {
-  margin-top: 3rem;
-  padding: 2rem;
-  background-color: #1a1a2e; /* A darker background */
-  border-radius: 10px;
-  text-align: center;
-}
-
-.overview-section h3 {
-  font-size: 1.8rem;
-  color: #f0f0f0;
-  margin-bottom: 1rem;
-}
-
-.overview-section p {
-  font-size: 1.2rem;
-  color: #b0b0b0;
-  margin-bottom: 2rem;
-}
-
-.overview-icons {
+.about-section {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  color: #7fc8a9; /* Text color */
+  flex-direction: column; /* Ensures column layout on smaller screens */
 }
 
-.overview-icon {
+.about-content {
+  display: flex;
+  max-width: 1000px;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap; /* Wrap content to avoid overflow */
+}
+
+.about-text {
   flex: 1;
-  min-width: 150px;
-  margin: 1rem;
-  text-align: center;
-  color: #ffffff;
+  margin-right: 2rem;
 }
 
-.overview-icon i {
-  font-size: 3rem;
-  color: #6c63ff; /* Use a vibrant color for icons */
-  margin-bottom: 0.5rem;
+.about-image {
+  flex: 1;
+  margin-left: 0; /* Reset left margin on smaller screens */
+  margin-top: 30px;
+  text-align: center; /* Center image */
 }
 
-.overview-icon h4 {
-  font-size: 1.2rem;
-  margin-top: 0.5rem;
-  color: #f0f0f0;
+.about-image img {
+  width: 100%;
+  max-width: 250px; /* Adjust based on desired size */
+  border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: purple; /* Matching the text color */
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: blueviolet;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .overview-icons {
-    flex-direction: column;
+  .about-content {
+      flex-direction: column; /* Stack content vertically */
+      text-align: center;
   }
 
-  .overview-icon {
-    margin-bottom: 1.5rem;
+  .about-text {
+      margin-right: 0; /* Reset right margin on smaller screens */
+  }
+
+  .about-image {
+      margin-left: 0; /* Reset left margin */
+      margin-top: 20px; /* Adjust spacing */
+  }
+}
+
+@media (max-width: 480px) {
+  p {
+      font-size: 1rem; /* Reduce font size on smaller screens */
+      line-height: 1.4;
+  }
+
+  h2 {
+      font-size: 1.5rem; /* Reduce heading size on smaller screens */
   }
 }

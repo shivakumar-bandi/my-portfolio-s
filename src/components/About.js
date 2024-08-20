@@ -17,29 +17,9 @@ const About = () => {
           </p>
         </div>
         <div className="about-image">
-          <img src="/images/shiva.jpeg" alt="Shiva Kumar Bandi" />
+        <img src="/images/shiva.jpeg" alt="Shiva Kumar Bandi" />
         </div>
       </div>
-
-      {/* Icons Section */}
-      <div className="overview-icons">
-          <div className="overview-icon">
-            <i className="icon-react"></i>
-            <h4>React Developer</h4>
-          </div>
-          <div className="overview-icon">
-            <i className="icon-frontend"></i>
-            <h4>Frontend Developer</h4>
-          </div>
-          <div className="overview-icon">
-            <i className="icon-backend"></i>
-            <h4>Backend Developer</h4>
-          </div>
-          <div className="overview-icon">
-            <i className="icon-mern"></i>
-            <h4>MERN Stack Developer</h4>
-          </div>
-        </div>
     </section>
   );
 };
