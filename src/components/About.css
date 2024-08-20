@@ -1,119 +1,58 @@
-.about-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-  color: #7fc8a9;
-  flex-direction: column;
-}
+/* Existing styles... */
 
-.about-content {
-  display: flex;
-  max-width: 1000px;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.about-text {
-  flex: 1;
-  margin-right: 2rem;
-}
-
-.about-image {
-  flex: 1;
-  margin-left: 0;
-  margin-top: 30px;
-  text-align: center;
-}
-
-.about-image img {
-  width: 100%;
-  max-width: 250px;
-  border-radius: 10px;
-}
-
-h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: purple;
-}
-
-p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: blueviolet;
-}
-
-/* New Overview Section */
 .overview-section {
   margin-top: 3rem;
   padding: 2rem;
-  background-color: #222; /* Dark background */
-  color: white; /* White text color */
-  text-align: center;
+  background-color: #1a1a2e; /* A darker background */
   border-radius: 10px;
-  width: 100%; /* Full width */
+  text-align: center;
 }
 
 .overview-section h3 {
   font-size: 1.8rem;
+  color: #f0f0f0;
   margin-bottom: 1rem;
 }
 
 .overview-section p {
   font-size: 1.2rem;
+  color: #b0b0b0;
   margin-bottom: 2rem;
 }
 
-.overview-cards {
+.overview-icons {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
-.overview-cards .card {
-  background-color: #333; /* Slightly lighter background */
-  padding: 1rem 2rem;
-  margin: 0.5rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  color: #fff;
+.overview-icon {
   flex: 1;
-  min-width: 200px;
-  max-width: 250px;
+  min-width: 150px;
+  margin: 1rem;
   text-align: center;
+  color: #ffffff;
+}
+
+.overview-icon i {
+  font-size: 3rem;
+  color: #6c63ff; /* Use a vibrant color for icons */
+  margin-bottom: 0.5rem;
+}
+
+.overview-icon h4 {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  color: #f0f0f0;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .about-content {
-      flex-direction: column;
-      text-align: center;
+  .overview-icons {
+    flex-direction: column;
   }
 
-  .about-text {
-      margin-right: 0;
-  }
-
-  .about-image {
-      margin-left: 0;
-      margin-top: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  p {
-      font-size: 1rem;
-      line-height: 1.4;
-  }
-
-  h2 {
-      font-size: 1.5rem;
-  }
-
-  .overview-cards .card {
-    padding: 0.8rem 1.5rem;
-    font-size: 0.9rem;
+  .overview-icon {
+    margin-bottom: 1.5rem;
   }
 }
